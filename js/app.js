@@ -114,6 +114,20 @@ console.log(48 == '48');
 // 	variable animal is anything other than a cow, it will print 
 //	"Hey! You're not a cow."
 
+let animal = "cow";
+if(animal == "cow"){
+	console.log("moooo");
+} else {
+	console.log("Hey! You're not a cow.")
+}
+
+animal = "something else";
+if(animal == "cow"){
+	console.log("moooo");
+} else {
+	console.log("Hey! You're not a cow.")
+}
+
 // E. Driver's Ed
 // Make a variable that holds a person's age. Be semantic.
 
