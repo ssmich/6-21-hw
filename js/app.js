@@ -556,14 +556,20 @@ console.log(isVowel("Z")); //--> false
 console.log(isVowel("A")); //--> true
 console.log(isVowel("&")); //--> false
 console.log(isVowel("3")); //--> false
-// 🔴 Commit.
 
-// E. getTwoLengths
-// Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+// 	E. getTwoLengths
+// 	Write a function getTwoLengths that accepts two parameters (strings). 
+//	The function should return an array of numbers where each number is 
+//	the length of the corresponding string.
+// console.log(getTwoLengths("Hank", "Hippopopalous")); => [4, 13]
 
-// console.log(getTwoLengths("Hank", "Hippopopalous"));
-// => [4, 13]
+function getTwoLengths(str1,str2){
+	let strLengths = [];
+	strLengths.push(str1.length, str2.length);
+	return strLengths;
+}
 
+console.log(getTwoLengths("good", "bye"));
 // 🔴 Commit.
 
 // F. getMultipleLengths
