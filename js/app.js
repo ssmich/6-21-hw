@@ -497,17 +497,15 @@ thomsCloset[1][2] = "Footie Pajamas";
 console.log(thomsCloset[1]);
 
 // IV. Functions
-// A. printGreeting
-// Do you think you could write a function called printGreeting with a parameter name that returns a greeting with the argument interpolated into the greeting?
-
-// Like so?
-
-// console.log(printGreeting("Slimer"));
-// => Hello there, Slimer!
-
-// You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, read entire problems carefully before doing them from now on.
-
-// 🔴 Commit.
+// 	A. printGreeting
+// 	Do you think you could write a function called printGreeting with 
+//	a parameter name that returns a greeting with the argument 
+//	interpolated into the greeting?	Like so?
+// 	console.log(printGreeting("Slimer"));
+// 	=> Hello there, Slimer! You think you could? I think so too. Feel 
+//	free to skip this problem, because you've already done it. If you've 
+//	done the problem twice, read entire problems carefully before doing 
+//	them from now on.
 
 // B. printCool
 // Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
