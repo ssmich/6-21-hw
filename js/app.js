@@ -628,12 +628,29 @@ console.log(maxOfThree(50, 100, 100));
 //	question, we need you to submit a solution that does not use 
 //	Math.max().
 
-// H. printLongestWord
-// Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+// 	H. printLongestWord
+// 	Write a function printLongestWord that accepts a single argument, 
+//	an array of strings. The method should return the longest word in 
+//	the array. In case of a tie, the method should return the word that 
+//	appears first in the array.
+// 	console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", 
+//	"Max", "Peanutbutter", "big", "Todd"])); => "Peanutbutter"
 
-// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
-// => "Peanutbutter"
+arrayOfStrings = ["Gelfings", "Skeksis", "Mystics", "Podlings", "Nebrie"]
+function printLongestWord(arrayOfStrings){
+	let arrayOfLengths = [];
+	for (let i = 0; i < arrayOfStrings.length; i++){
+		arrayOfLengths.push(arrayOfStrings[i].length);
+	}
+	let maxLength = Math.max(...arrayOfLengths);
+	for (let i = 0; i < arrayOfLengths.length; i++){
+		if (arrayOfLengths[i] == maxLength){
+			return arrayOfStrings[i];
+		}
+	}
+}
 
+console.log(printLongestWord(arrayOfStrings));
 // 🔴 Commit.
 
 // I. transmogrify
