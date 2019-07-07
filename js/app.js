@@ -267,7 +267,7 @@ console.log(`$${bank_account}`);
 // 	A. Talk about it:
 // 	What are the things in an array called?
 
-//		objects
+//		elemenst
 
 // 	Do Arrays guarantee those things will be in order?
 
@@ -301,15 +301,24 @@ randomThings[2] = "World";
 
 console.log(randomThings[2]);
 
-// D. Change values
-// Given the following array const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+// 	D. Change values
+// 	Given the following array 
+
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
 
 // What would you write to access the 3rd element of the array?
 
+console.log(ourClass[2]);
+
 // Change the value of "Github" to "Octocat"
+
+ourClass[4] = "Octocat";
+console.log(ourClass[4]);
 
 // Add a new element, "Cloud City" to the array.
 
+ourClass.push("Cloud City");
+console.log(ourClass);
 // 🔴 Commit.
 
 // E. Mix It Up
