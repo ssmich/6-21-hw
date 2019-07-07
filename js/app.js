@@ -283,16 +283,23 @@ console.log(`$${bank_account}`);
 
 const quotes = ["2 legit 2 quit", "Got it goin like a turbo jet", "Check it, direct it, lets begin"];
 
-// C. Accessing elements
-// Given the following array const randomThings = [1, 10, "Hello", true]
+// 	C. Accessing elements
+// 	Given the following array 
 
-// How do you access the 1st element in the array?
+const randomThings = [1, 10, "Hello", true]
 
-// Change the value of "Hello" to "World".
+// 	How do you access the 1st element in the array?
 
-// Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+console.log(randomThings[0]);
 
-// 🔴 Commit.
+// 	Change the value of "Hello" to "World".
+
+randomThings[2] = "World";
+
+// 	Check the value of the array to make sure it updated the array. 
+//	How? Why, yes! console.log();
+
+console.log(randomThings[2]);
 
 // D. Change values
 // Given the following array const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
