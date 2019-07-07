@@ -531,12 +531,31 @@ function calculateCube(num) {
 
 calculateCube(5);
 
-// D. isVowel
-// Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
+// 	D. isVowel
+// 	Write a function isVowel that takes a character (i.e. a string of 
+//	length 1) and returns true if it is a vowel, false otherwise. The 
+//	vowel could be upper or lower case. Test your function on every vowel 
+//	and make sure it's working. In general, when you write functions, 
+//	take a minute to test them with different values to make sure they 
+//	behave the way you want.
+// 	console.log(isVowel("a"));	=> true
 
-// console.log(isVowel("a"));
-// => true
+//	method taken from: https://dev.to/worldclassdev/javascript-algorithms-1-counting-the-vowels-in-a-string-oftext-5ejl
+function isVowel(letter){
+	const vowels = ["a", "e", "i", "o", "u"];
+	let char = letter;
+	if(vowels.includes(char.toLowerCase())){
+		return true;
+	} else{
+		return false;
+	}
+}
 
+console.log(isVowel("o")); //--> true
+console.log(isVowel("Z")); //--> false
+console.log(isVowel("A")); //--> true
+console.log(isVowel("&")); //--> false
+console.log(isVowel("3")); //--> false
 // 🔴 Commit.
 
 // E. getTwoLengths
