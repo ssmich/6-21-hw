@@ -319,46 +319,291 @@ console.log(ourClass[4]);
 
 ourClass.push("Cloud City");
 console.log(ourClass);
+
+// 	E. Mix It Up
+// 	Note: You don't really need .splice() for these. You could use it, 
+//	but there are simpler array methods that are more appropriate.
+// 	Given the following array: 
+
+const myArray = [5, 10, 500, 20];
+
+// 	Add the string "Egon" to the end of the array. Add another string 
+//	of your choice to the end of the array.
+
+myArray[4] = "Egon";
+myArray[5] = "Igor";
+console.log(myArray);
+
+// 	Remove the 5 from the beginning of the array.
+
+myArray.shift();
+console.log(myArray);
+
+// 	Add the string "Bob Marley" to the beginning of the array.
+
+myArray.unshift("Bob Marley");
+console.log(myArray);
+
+// 	Remove the string of your choice from the end of the array.
+
+myArray.pop();
+console.log(myArray);
+
+// 	Reverse this array using Array.prototype.reverse(). 
+
+myArray.reverse();
+console.log(myArray);
+console.log(myArray.reverse());
+
+//	Did you mutate the array? What does mutate mean? Did the .reverse() 
+//	method return anything?
+
+// 		Yes the array was mutated, or changed. It returned the original 
+//		array with the elements in reverse indexed order. 
+
+// 	F. Biggie Smalls
+// 	Create a variable that contains an integer.
+
+// 	Write an if ... else statement that:
+// 	console.log()s "little number" if the number is entered is less 
+//	than 100
+
+// 	console.log()s big number if the number is greater than or equal 
+//	to 100.
+
 // 🔴 Commit.
 
-// E. Mix It Up
-// Note: You don't really need .splice() for these. You could use it, but there are simpler array methods that are more appropriate.
+// 	G. Monkey in the Middle
+// 	Write an if ... else if ... else statement:
+// 	console.log() little number if the number entered is less than 5.
 
-// Given the following array: const myArray = [5, 10, 500, 20]
-
-// Add the string "Egon" to the end of the array. Add another string of your choice to the end of the array.
-
-// Remove the 5 from the beginning of the array.
-
-// Add the string "Bob Marley" to the beginning of the array.
-
-// Remove the string of your choice from the end of the array.
-
-// Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse() method return anything?
+// 	If the number entered is more than 10, log big number.
+// 	Otherwise, log "monkey". 
 
 // 🔴 Commit.
 
-// F. Biggie Smalls
-// Create a variable that contains an integer.
+// H. What's in Your Closet?
+// 	Below, we've given you examples of Kristyn and Thom's closets 
+//	modeled as data in JavaScript.
 
-// Write an if ... else statement that:
+const kristynsCloset = [
+   "left shoe",
+   "cowboy boots",
+   "right sock",
+   "GA hoodie",
+   "green pants",
+   "yellow knit hat",
+   "marshmallow peeps"
+];
 
-// console.log()s "little number" if the number is entered is less than 100
+// 	Thom's closet is more complicated. Check out this nested data 
+//	structure!!
+const thomsCloset = [
+	[
+//    These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+   	],[
+     // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs",
+   	],[
+//     // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans",
+   	]
+];
+// What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
 
-// console.log()s big number if the number is greater than or equal to 100.
+// Kristyn just bought some sweet shades! Add "raybans" to her closet after "yellow knit hat".
+
+// Kristyn spilled coffee on her hat... modify this item to read "stained knit hat" instead of yellow.
+
+// Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirts array.
+
+// In the same way, access one item from Thom's pants array.
+
+// Access one item from Thom's accessories array.
+
+// Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
+
+// Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
 
 // 🔴 Commit.
 
-// G. Monkey in the Middle
-// Write an if ... else if ... else statement:
+// IV. Functions
+// A. printGreeting
+// Do you think you could write a function called printGreeting with a parameter name that returns a greeting with the argument interpolated into the greeting?
 
-// console.log() little number if the number entered is less than 5.
+// Like so?
 
-// If the number entered is more than 10, log big number.
+// console.log(printGreeting("Slimer"));
+// => Hello there, Slimer!
 
-// Otherwise, log "monkey". 
+// You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, read entire problems carefully before doing them from now on.
 
 // 🔴 Commit.
 
+// B. printCool
+// Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
+
+// console.log(printCool("Captain Reynolds"));
+// => "Captain Reynolds is cool";
+
+// 🔴 Commit.
+
+// C. calculateCube
+// Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
+
+// console.log(calculateCube(5));
+// => 125
+
+// 🔴 Commit.
+
+// D. isVowel
+// Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
+
+// console.log(isVowel("a"));
+// => true
+
+// 🔴 Commit.
+
+// E. getTwoLengths
+// Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
+// => [4, 13]
+
+// 🔴 Commit.
+
+// F. getMultipleLengths
+// Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+// => [5, 4, 2, 2, 4]
+
+// 🔴 Commit.
+
+// G. maxOfThree
+// Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
+
+// console.log(maxOfThree(6, 9, 1));
+// => 9
+
+// Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, we need you to submit a solution that does not use Math.max().
+
+// 🔴 Commit.
+
+// H. printLongestWord
+// Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+// => "Peanutbutter"
+
+// 🔴 Commit.
+
+// I. transmogrify
+// Write a Javascript function called transmogrify. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
+
+// The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
+
+// For example, the transmogrified result of 5, 3, and 2 is (5 times 3) to the power of 2 is 225.
+
+// console.log(transmogrify(5, 3, 2));
+// => 225
+
+// 🔴 Commit.
+
+// J. reverseWordOrder v2
+// Without using .split(), .reverse(), or .join(), write a function reverseWordOrder that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation.
+
+// See if you can do it without googling.
+
+// Remember: You can index directly into a string:
+
+// "hello world"[7]
+// => "o"
+
+// That and basic loops and variables and arrays are all you need to solve this without the Array methods.
+
+// console.log(reverseWordOrder("Ishmael me Call"));
+// => "Call me Ishmael"
+
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
+// => "comb my on Lâncome use I"
+
+// 🔴 Commit.
+
+// K. Get down and dirty with Math.random()
+// Write a function that will return a random integer between 1 and 10. Test it.
+// Write a function that will return a random integer between 10 and 100. Test it.
+// Write a function that will return a random number between 532 and 13267. Test it.
+// Write a function that will return a random number between 1 and 10. Test it.
+// Add a few more quotes to the quotes array from question III-B-1 above. Write a function that will take an array as a parameter, and return a random element from that array. Call your function a few times, passing in the quotes array. Give it a nice semantic name like getRandomElement.
+// 🔴 Commit.
+
+// Objects
+// Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
+
+// A. Make a user object
+// Create an object called user.
+// Write in to the object the key-value pairs for name, email, age, and purchased. Set the value of purchased to an empty array []. Set the other values to whatever you would like.
+// 🔴 Commit.
+
+// B. Update the user
+// Our user has changed his or her email address. Without changing the original user object, update the email value to a new email address.
+// Our user has had a birthday! Without changing the original user object, increment the age value using the postfix operator. Hint: age++
+// 🔴 Commit.
+
+// C. Adding keys and values
+// You have decided to add your user's location to the data that you want to collect.
+
+// Without changing the original user object, add a new key location to the object, and give it a value or some-or-other location (a string).
+// 🔴 Commit.
+
+// D. Shopaholic!
+// Our user has purchased an item! They have purchased some "carbohydrates". Using .push(), add the string "carbohydrates" to the purchased array.
+// Our user has purchased an item! They have purchased some "peace of mind". Using .push(), add the string "peace of mind" to the purchased array.
+// Our user has purchased an item! They have purchased some "Merino jodhpurs". Using .push(), add the string "Merino jodhpurs" to the purchased array.
+// Console.log just the "Merino jodhpurs" from the purchased array.
+// 🔴 Commit.
+
+// E. Object-within-object
+// Remember that you can add an object to an existing object in the same way that you can add any new property/value pair.
+
+// If we want to give our user a friend with a name and age, we could write:
+
+// user.friend = {
+//     name: "Grace Hopper",
+//     age: 85
+// }
+// When we console.log user, we would see the friend object added to our user object.
+
+// Write a friend object into your user object and give the friend a name, age, location, and purchased array (empty for now)
+// Console.log just the friend's name
+// Console.log just the friend's location
+// CHANGE the friend's age to 55
+// The friend has purchased "The One Ring". Use .push() to add "The One Ring" to the friend's purchased array.
+// The friend has purchased "A latte". Use .push() to add "A latte" to the friend's purchased array.
+// Console.log just "A latte" from the friend's purchased array.
+// 🔴 Commit.
+
+// F. Loops
+// Write a for loop that iterates over the User's purchased array (NOT the friend's purchased array), and prints each element to the console.
+// Write a for loop that iterates over the Friend's purchased array, and prints each element to the console.
+// 🔴 Commit.
+
+// G. Functions can operate on objects
+// Write a single function updateUser that takes no parameters. When the function is run, it should:
+// it should increment the user's age by 1
+// make the user's name uppercase
+// The function does not need a return statement, it will merely modify the user object.
+
+// Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our user object, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoud function with user as the argument.
+// 🔴 Commit.
 
 
