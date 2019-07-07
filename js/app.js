@@ -277,9 +277,11 @@ console.log(`$${bank_account}`);
 
 // 		Grocery items, students in class
 
-// B. Easy Does It
-// Create an array that contains three quotes and store it in a variable called quotes.
-// 🔴 Commit.
+// 	B. Easy Does It
+// 	Create an array that contains three quotes and store it in a 
+//	variable called quotes.
+
+const quotes = ["2 legit 2 quit", "Got it goin like a turbo jet", "Check it, direct it, lets begin"];
 
 // C. Accessing elements
 // Given the following array const randomThings = [1, 10, "Hello", true]
