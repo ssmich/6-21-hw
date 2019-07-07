@@ -590,18 +590,43 @@ function getMultipleLengths(arrayOfStrings){
 let arrayOfStrings = ["Fred", "Velma", "Daphne", "Shaggy", "Scooby"];
 console.log(getMultipleLengths(arrayOfStrings));
 
+// 	G. maxOfThree
+// 	Define a function maxOfThree that takes three numbers as arguments 
+//	and returns the largest of them. If all numbers are the same, it 
+//	doesn't matter which one is returned. If the two largest numbers 
+//	are the same, one of them should be returned. Be sure to test it 
+//	with larger values in each of the three locations.
+// 	console.log(maxOfThree(6, 9, 1)); => 9
 
-// 🔴 Commit.
+function maxOfThree(num1, num2, num3){
+	if(num1 == num2 == num3){
+		return num1;
+	} else if (num1 == num2 && num1 > num3){
+		return num1;
+	} else if (num1 == num3 && num1 > num2){
+		return num1;
+	} else if (num2 == num3 && num2 > num1){
+		return num2;
+	} else if (num1 > num2 && num1 > num3){
+		return num1;
+	} else if (num2 > num1 && num2 > num3){
+		return num2;
+	} else{
+		return num3;
+	}
+}
 
-// G. maxOfThree
-// Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
-
-// console.log(maxOfThree(6, 9, 1));
-// => 9
-
-// Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, we need you to submit a solution that does not use Math.max().
-
-// 🔴 Commit.
+console.log(maxOfThree(44, 21, 100));
+console.log(maxOfThree(100, 44, 21));
+console.log(maxOfThree(21, 100, 44));
+console.log(maxOfThree(100,100,100));
+console.log(maxOfThree(100, 100, 50));
+console.log(maxOfThree(100, 50, 100));
+console.log(maxOfThree(50, 100, 100));
+// 	Did you use Google and find Math.max()? If so, great job! Very 
+//	resourceful—keep looking stuff up! However, for this particular 
+//	question, we need you to submit a solution that does not use 
+//	Math.max().
 
 // H. printLongestWord
 // Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
