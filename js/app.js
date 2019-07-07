@@ -245,5 +245,98 @@ for(let i = 1; i <=100; i++){
 
 console.log(`$${bank_account}`);
 
-// 	🔴 Commit.
+// E. Multiples of 3 and 5
+// 	If we list all the natural numbers below 10 that are multiples of 
+//	3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+// 	Find the sum of all the multiples of 3 or 5 below 1000. If a 
+//	previous question you've done has helpful bits of code in it that 
+//	partially solves this problem, look back at them.
+
+// 	You just solved Project Euler problem 1!
+
+// 	Are you having dejà vu? This just in! From the "Read the entire 
+//	problem before you start" dept: This problem was on a previous 
+//	assignment. You may skip it if you've already done it, just include 
+//	a comment saying that you've already done it. If you've now done 
+// 	the problem twice, perhaps next time you'll read the whole problem 
+//	before starting it.
+
+// Already done it. 
+
+// III. Arrays & Control flow
+// A. Talk about it:
+// What are the things in an array called?
+
+// Do Arrays guarantee those things will be in order?
+
+// What real-life thing could you model with an array?
+
+// 🔴 Commit.
+
+// B. Easy Does It
+// Create an array that contains three quotes and store it in a variable called quotes.
+// 🔴 Commit.
+
+// C. Accessing elements
+// Given the following array const randomThings = [1, 10, "Hello", true]
+
+// How do you access the 1st element in the array?
+
+// Change the value of "Hello" to "World".
+
+// Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+
+// 🔴 Commit.
+
+// D. Change values
+// Given the following array const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+
+// What would you write to access the 3rd element of the array?
+
+// Change the value of "Github" to "Octocat"
+
+// Add a new element, "Cloud City" to the array.
+
+// 🔴 Commit.
+
+// E. Mix It Up
+// Note: You don't really need .splice() for these. You could use it, but there are simpler array methods that are more appropriate.
+
+// Given the following array: const myArray = [5, 10, 500, 20]
+
+// Add the string "Egon" to the end of the array. Add another string of your choice to the end of the array.
+
+// Remove the 5 from the beginning of the array.
+
+// Add the string "Bob Marley" to the beginning of the array.
+
+// Remove the string of your choice from the end of the array.
+
+// Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse() method return anything?
+
+// 🔴 Commit.
+
+// F. Biggie Smalls
+// Create a variable that contains an integer.
+
+// Write an if ... else statement that:
+
+// console.log()s "little number" if the number is entered is less than 100
+
+// console.log()s big number if the number is greater than or equal to 100.
+
+// 🔴 Commit.
+
+// G. Monkey in the Middle
+// Write an if ... else if ... else statement:
+
+// console.log() little number if the number entered is less than 5.
+
+// If the number entered is more than 10, log big number.
+
+// Otherwise, log "monkey". 
+
+// 🔴 Commit.
+
+
 
