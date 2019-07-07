@@ -511,8 +511,8 @@ console.log(thomsCloset[1]);
 // 	Write a function printCool that accepts one parameter, name as an 
 // 	argument. The function should print the name and a message saying 
 //	that that person is cool.
-// 	console.log(printCool("Captain Reynolds"));
-// 	=> "Captain Reynolds is cool";
+// 	console.log(printCool("Captain Reynolds")); 
+//	=> "Captain Reynolds is cool";
 
 function printCool(name){
 	console.log(`${name} is cool`);
@@ -520,15 +520,16 @@ function printCool(name){
 
 printCool("Stacey");
 
-// 🔴 Commit.
+// 	C. calculateCube
+// 	Write a function calculateCube that takes a single number and prints 
+//	the volume of a cube made from that number.
+// 	console.log(calculateCube(5));	=> 125
 
-// C. calculateCube
-// Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
+function calculateCube(num) {
+	console.log(Math.pow(num,3));
+}
 
-// console.log(calculateCube(5));
-// => 125
-
-// 🔴 Commit.
+calculateCube(5);
 
 // D. isVowel
 // Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
