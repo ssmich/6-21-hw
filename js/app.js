@@ -261,17 +261,21 @@ console.log(`$${bank_account}`);
 // 	the problem twice, perhaps next time you'll read the whole problem 
 //	before starting it.
 
-// Already done it. 
+// 		Already done it. 
 
 // III. Arrays & Control flow
-// A. Talk about it:
-// What are the things in an array called?
+// 	A. Talk about it:
+// 	What are the things in an array called?
 
-// Do Arrays guarantee those things will be in order?
+//		objects
 
-// What real-life thing could you model with an array?
+// 	Do Arrays guarantee those things will be in order?
 
-// 🔴 Commit.
+//		no
+
+// 	What real-life thing could you model with an array?
+
+// 		Grocery items, students in class
 
 // B. Easy Does It
 // Create an array that contains three quotes and store it in a variable called quotes.
