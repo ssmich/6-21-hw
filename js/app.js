@@ -488,7 +488,7 @@ console.log(thomsCloset[2][1]);
 // 	Log a sentence about what Thom's wearing. Example: "Thom is looking 
 //	fierce in a grey button-up, jeans and wool scarf!" =
 
-console.log("Thom is loking fierce in a " + thomsCloset[0][0] + ", " + thomsCloset[1][2] + " and " + thomsCloset[2][1] + "!");
+console.log("Thom is looking fierce in a " + thomsCloset[0][0] + ", " + thomsCloset[1][2] + " and " + thomsCloset[2][1] + "!");
 
 // 	Get more specific about what kind of PJs Thom's wearing this winter. 
 //	Modify the name of his PJ pants to Footie Pajamas.
@@ -507,11 +507,18 @@ console.log(thomsCloset[1]);
 //	done the problem twice, read entire problems carefully before doing 
 //	them from now on.
 
-// B. printCool
-// Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
+// 	B. printCool
+// 	Write a function printCool that accepts one parameter, name as an 
+// 	argument. The function should print the name and a message saying 
+//	that that person is cool.
+// 	console.log(printCool("Captain Reynolds"));
+// 	=> "Captain Reynolds is cool";
 
-// console.log(printCool("Captain Reynolds"));
-// => "Captain Reynolds is cool";
+function printCool(name){
+	console.log(`${name} is cool`);
+}
+
+printCool("Stacey");
 
 // 🔴 Commit.
 
