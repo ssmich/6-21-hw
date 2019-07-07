@@ -173,22 +173,36 @@ for(let i = 11; i <= 4000; i+=3){
 	console.log(i);
 }
 
-//	🔴 Commit.
-
 //	B. Get even
 //	Print out the numbers that are within the range of 1 - 100.
+
+for(let i = 1; i <= 100; i++){
+	console.log(i);
+}
 
 //	Adjust your code to add a message next to even numbers only that 
 //	says: "<-- is an even number".
 
-//	🔴 Commit.
+for(let i = 1; i <= 100; i++){
+	if(i % 2 ===0){
+		console.log(`${i} <-- is an even number`);
+	} else {
+		console.log(`${i}`);
+	}
+}
 
-//	C. Give me Five
+// 	C. Give me Five
 //	For the numbers 0 - 100, print out "I found a number. High five!" 
 //	if the number is a multiple of five.
 //	Example Output:
 //	I found a 5. High five!
 //	I found a 10. High five!
+
+for(let i = 0; i <= 100; i++){
+	if(i % 5 === 0){
+		console.log("I found a " + i + ". High five!");
+	}
+}
 //	Add to the code from above to print out "I found a number. Three is 
 //	a crowd" if the number is a multiple of three.
 //	Example Output:
@@ -199,7 +213,14 @@ for(let i = 11; i <= 4000; i+=3){
 // 	I found a 10. High five!
 // 	For numbers divisible by both three and five, be sure your code 
 //	prints both messages.
-// 	🔴 Commit.
+
+for(let i = 0; i <= 100; i++){
+	if(i % 5 === 0){
+		console.log("I found a " + i + ". High five!");
+	} if (i % 3 === 0){
+		console.log("I found a " + i + ". Three is a crowd");
+	} 
+}
 
 // D. Savings account
 // 	Write code that will save the sum of all the numbers between 1 - 10 
