@@ -651,39 +651,61 @@ function printLongestWord(arrayOfStrings){
 }
 
 console.log(printLongestWord(arrayOfStrings));
-// 🔴 Commit.
 
-// I. transmogrify
-// Write a Javascript function called transmogrify. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
+// 	I. transmogrify
+// 	Write a Javascript function called transmogrify. This function 
+//	should accept three arguments, which you can assume will be numbers. 
+//	Your function should return the "transmogrified" result.
+// 	The transmogrified result of three numbers is the product of the 
+//	first two numbers, raised to the power of the third number.
+// 	For example, the transmogrified result of 5, 3, and 2 is (5 times 3) 
+//	to the power of 2 is 225.
+// 	console.log(transmogrify(5, 3, 2));	=> 225
 
-// The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
+function transmorgify(num1, num2, num3){
+	return Math.pow(num1 * num2, num3); 
+}
 
-// For example, the transmogrified result of 5, 3, and 2 is (5 times 3) to the power of 2 is 225.
+console.log(transmorgify(1, 3, 3));
 
-// console.log(transmogrify(5, 3, 2));
-// => 225
+// 	J. reverseWordOrder v2
+// 	Without using .split(), .reverse(), or .join(), write a function 
+//	reverseWordOrder that accepts a single argument, a string. The 
+//	function should return a string with the order of the words reversed. 
+//	Don't worry about punctuation. See if you can do it without googling.
+// 	Remember: You can index directly into a string: "hello world"[7] => "o"
+// 	That and basic loops and variables and arrays are all you need to 
+//	solve this without the Array methods.
+// 	console.log(reverseWordOrder("Ishmael me Call")); => "Call me Ishmael"
+// 	console.log(reverseWordOrder("I use Lâncome on my comb"));
+// 	=> "comb my on Lâncome use I"
 
-// 🔴 Commit.
+// A little help from Gabriele Petrovic @ 
+// https://stackoverflow.com/questions/6094117/prepend-text-to-beginning-of-string
+// var mystr = 'is my name.';
+// mystr = mystr.replace (/^/,'John ');
+// console.log(mystr);
 
-// J. reverseWordOrder v2
-// Without using .split(), .reverse(), or .join(), write a function reverseWordOrder that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation.
+const phrase = 'Jack in box'
+function reverseWordOrder(str){
+	let iCount = 0
+	let tempStr = ""
+	let reverseStr = ""
+	for(let i = iCount; i < str.length; i++){
+		if(str[i] !== " "){
+		iCount += 1;
+		tempStr += str[i];
+		} else{
+		iCount += 2;
+		reverseStr = reverseStr.replace(/^/, `${tempStr} `);
+		tempStr = "";
+		}
+		}
+	reverseStr = reverseStr.replace(/^/, `${tempStr} `);
+	console.log(reverseStr);
+}
 
-// See if you can do it without googling.
-
-// Remember: You can index directly into a string:
-
-// "hello world"[7]
-// => "o"
-
-// That and basic loops and variables and arrays are all you need to solve this without the Array methods.
-
-// console.log(reverseWordOrder("Ishmael me Call"));
-// => "Call me Ishmael"
-
-// console.log(reverseWordOrder("I use Lâncome on my comb"));
-// => "comb my on Lâncome use I"
-
-// 🔴 Commit.
+reverseWordOrder(phrase);
 
 // K. Get down and dirty with Math.random()
 // Write a function that will return a random integer between 1 and 10. Test it.
@@ -753,4 +775,4 @@ console.log(printLongestWord(arrayOfStrings));
 // Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our user object, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoud function with user as the argument.
 // 🔴 Commit.
 
-
+0
