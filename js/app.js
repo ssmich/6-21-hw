@@ -779,6 +779,7 @@ const user = {
 	age: 30,
 	purchased: [],
 }
+console.log(user);
 
 // 	B. Update the user
 // 	Our user has changed his or her email address. Without changing the 
@@ -790,14 +791,16 @@ user.email = "somegirl@gwiz.com";
 //	increment the age value using the postfix operator. Hint: age++
 
 user.age++;
-
 console.log(user);
 
-// C. Adding keys and values
-// You have decided to add your user's location to the data that you want to collect.
+// 	C. Adding keys and values
+// 	You have decided to add your user's location to the data that you want 
+//	to collect. Without changing the original user object, add a new key 
+// 	location to the object, and give it a value or some-or-other location 
+//	(a string).
 
-// Without changing the original user object, add a new key location to the object, and give it a value or some-or-other location (a string).
-// 🔴 Commit.
+user.location = "Somewhere, USA";
+console.log(user);
 
 // D. Shopaholic!
 // Our user has purchased an item! They have purchased some "carbohydrates". Using .push(), add the string "carbohydrates" to the purchased array.
