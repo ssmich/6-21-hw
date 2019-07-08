@@ -761,15 +761,24 @@ function getRandomElement(array){
 
 console.log(getRandomElement(quotes));
 
-// 🔴 Commit.
-
 // Objects
-// Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
+// 	Let's set up an object data structure. Let's say we have a website 
+//	that sells products, and we have a user of our website, and we want 
+//	to store that user's data. The object data structure is a good way 
+//	to organize the data from our user.
 
-// A. Make a user object
-// Create an object called user.
-// Write in to the object the key-value pairs for name, email, age, and purchased. Set the value of purchased to an empty array []. Set the other values to whatever you would like.
-// 🔴 Commit.
+// 	A. Make a user object
+// 	Create an object called user.
+// 	Write into the object the key-value pairs for name, email, age, and 
+//	purchased. Set the value of purchased to an empty array []. Set the 
+//	other values to whatever you would like.
+
+const user = {
+	name: "Dude", 
+	email: "someguy@gwiz.com",
+	age: 30,
+	purchased: [],
+}
 
 // B. Update the user
 // Our user has changed his or her email address. Without changing the original user object, update the email value to a new email address.
