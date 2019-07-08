@@ -886,12 +886,34 @@ for(let i = 0; i < user.friend.purchased.length; i++){
 	console.log(user.friend.purchased[i]);
 }
 
-// G. Functions can operate on objects
-// Write a single function updateUser that takes no parameters. When the function is run, it should:
-// it should increment the user's age by 1
-// make the user's name uppercase
-// The function does not need a return statement, it will merely modify the user object.
+// 	G. Functions can operate on objects
+// 	Write a single function updateUser that takes no parameters. When the 
+//	function is run, it should:
+// 	it should increment the user's age by 1
+// 	make the user's name uppercase
+// 	The function does not need a return statement, it will merely modify 
+//	the user object.
 
-// Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our user object, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoud function with user as the argument.
-// 🔴 Commit.
+function updateUser(){
+	user.age++;
+	user.name = user.name.toUpperCase();
+}
 
+updateUser();
+console.log(user);
+
+// 	Write a function oldAndLoud that performs the exact same tasks as 
+//	updateUser, but instead of hard-coding it to only work on our user 
+//	object, make it take a parameter person, and have it modify the 
+//	object that is passed in as an argument when the function is called. 
+//	Call your oldAndLoud function with user as the argument.
+
+function oldAndLoud(object){
+	object.age++;
+	object.name = object.name.toUpperCase();
+}
+
+user.name = "Dude";
+console.log(user);
+oldAndLoud(user);
+console.log(user);
