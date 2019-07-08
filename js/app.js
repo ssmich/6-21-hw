@@ -281,7 +281,7 @@ console.log(`$${bank_account}`);
 // 	Create an array that contains three quotes and store it in a 
 //	variable called quotes.
 
-const quotes = ["2 legit 2 quit", "Got it goin like a turbo jet", "Check it, direct it, lets begin"];
+let quotes = ["2 legit 2 quit", "Got it goin like a turbo jet", "Check it, direct it, lets begin"];
 
 // 	C. Accessing elements
 // 	Given the following array 
@@ -707,12 +707,60 @@ function reverseWordOrder(str){
 
 reverseWordOrder(phrase);
 
-// K. Get down and dirty with Math.random()
-// Write a function that will return a random integer between 1 and 10. Test it.
-// Write a function that will return a random integer between 10 and 100. Test it.
-// Write a function that will return a random number between 532 and 13267. Test it.
-// Write a function that will return a random number between 1 and 10. Test it.
-// Add a few more quotes to the quotes array from question III-B-1 above. Write a function that will take an array as a parameter, and return a random element from that array. Call your function a few times, passing in the quotes array. Give it a nice semantic name like getRandomElement.
+// 	K. Get down and dirty with Math.random()
+// 	Write a function that will return a random integer between 1 and 10. 
+//	Test it.
+
+function randomInt_1_10(){
+	return Math.floor(Math.random()*(10-1))+1;
+}
+
+console.log(randomInt_1_10());
+
+// 	Write a function that will return a random integer between 10 and 100. 
+//	Test it.
+
+function randomInt_10_100(){
+	return Math.floor(Math.random()*(100-10))+10;
+}
+
+console.log(randomInt_10_100());
+
+// 	Write a function that will return a random number between 532 and 
+//	13267. Test it.
+
+function randomNum_532_13267(){
+	return Math.random()*(13267-532)+532;
+}
+
+console.log(randomNum_532_13267());
+
+// 	Write a function that will return a random number between 1 and 10. 
+//	Test it.
+
+function randomNum_1_10(){
+	return Math.random()*(10-1)+1;
+}
+
+console.log(randomNum_1_10());
+
+// 	Add a few more quotes to the quotes array from question III-B-1 above. 
+
+quotes = ["2 legit 2 quit", "Got it goin like a turbo jet", "Check it, direct it, lets begin", 
+		"Party on party people", "Jump to the rhythm, jump, jump"];
+
+//	Write a function that will take an array as a parameter, and return 
+//	a random element from that array. Call your function a few times, 
+//	passing in the quotes array. Give it a nice semantic name like 
+//	getRandomElement.
+
+function getRandomElement(array){
+	randomIndex = Math.floor(Math.random()*array.length)
+	return array[randomIndex];
+}
+
+console.log(getRandomElement(quotes));
+
 // 🔴 Commit.
 
 // Objects
@@ -775,4 +823,3 @@ reverseWordOrder(phrase);
 // Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our user object, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoud function with user as the argument.
 // 🔴 Commit.
 
-0
